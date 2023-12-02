@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>b8ffb6ab0ac54f939dcbd7997825afb2</title>
+  <title>3e578368e99646e6bc766e22004e7af2</title>
   <style>
     html {
       line-height: 1.5;
@@ -14,10 +14,10 @@
       background-color: #fdfdfd;
     }
     body {
-      margin: 0 auto;
+      margin: 0;
       max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
       padding-top: 50px;
       padding-bottom: 50px;
       hyphens: auto;
@@ -638,7 +638,7 @@ dtype: int64</code></pre>
 </div>
 </div>
 <div class="cell code" data-execution_count="39"
-data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:194}"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:174}"
 id="LLG34OmJ-Ijv" data-outputId="17c716d9-805e-4fd4-f237-d3452579c98b">
 <div class="sourceCode" id="cb9"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">&#39;rideable_type&#39;</span>).agg(<span class="kw">lambda</span> x: x.isna().<span class="bu">sum</span>())</span></code></pre></div>
@@ -953,7 +953,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a hr
 </div>
 </div>
 <div class="cell code" data-execution_count="40"
-data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:252}"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:256}"
 id="xYujVy3a-P7L" data-outputId="d2e19d80-e7ab-400d-e20e-0b8677e5fc35">
 <div class="sourceCode" id="cb10"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">2</span>))</span>
@@ -964,7 +964,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a h
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;User type&#39;</span>, size<span class="op">=</span><span class="dv">12</span>)<span class="op">;</span></span></code></pre></div>
 <div class="output display_data">
 <p><img
-src="/static/ph/a93796b0ae5811cf27069930b99093a98f3f8bcb.png" /></p>
+src="/static/col2/a93796b0ae5811cf27069930b99093a98f3f8bcb.png" /></p>
 </div>
 </div>
 <div class="cell code" data-execution_count="41"
@@ -1370,7 +1370,7 @@ dtype: object</code></pre>
 </div>
 </div>
 <div class="cell code" data-execution_count="48"
-data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:250}"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:256}"
 id="k3v_fMl2BTcN" data-outputId="c6fc2f04-71a9-47dd-de83-e5eed78d731f">
 <div class="sourceCode" id="cb18"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>avg_trip_duration <span class="op">=</span> df.groupby(by<span class="op">=</span><span class="st">&#39;member_casual&#39;</span>).trip_duration_minutes.mean()</span>
@@ -1382,7 +1382,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a h
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;User type&#39;</span>, size<span class="op">=</span><span class="dv">12</span>)<span class="op">;</span></span></code></pre></div>
 <div class="output display_data">
 <p><img
-src="/static/ph/041b372d6593727a0288e8c45f1240ba5c050fc9.png" /></p>
+src="/static/col2/041b372d6593727a0288e8c45f1240ba5c050fc9.png" /></p>
 </div>
 </div>
 <div class="cell code" data-execution_count="49"
@@ -1783,7 +1783,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a h
 <span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
 <div class="output display_data">
 <p><img
-src="/static/ph/4d513a7b13f257a273dd75adf7d661f2fcaeffc5.png" /></p>
+src="/static/col2/4d513a7b13f257a273dd75adf7d661f2fcaeffc5.png" /></p>
 </div>
 </div>
 <div class="cell code" data-execution_count="77"
@@ -1822,11 +1822,11 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a h
 <span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">6</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Sunday&#39;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)<span class="op">;</span></span></code></pre></div>
 <div class="output display_data">
 <p><img
-src="/static/ph/ef971ba46ac8855f1f5e5c1e6d1804ee51f353b9.png" /></p>
+src="/static/col2/ef971ba46ac8855f1f5e5c1e6d1804ee51f353b9.png" /></p>
 </div>
 </div>
 <div class="cell code" data-execution_count="79"
-data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:282}"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:295}"
 id="E9tzEX0oD2yq" data-outputId="5867aaec-ea6f-4da8-bd9b-f14b0125e640">
 <div class="sourceCode" id="cb25"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="fl">2.5</span>))</span>
@@ -1837,7 +1837,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a h
 <span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Rideable type&#39;</span>)<span class="op">;</span></span></code></pre></div>
 <div class="output display_data">
 <p><img
-src="/static/ph/8b4def9e7a0ca7f728171765dfa84820da549e63.png" /></p>
+src="/static/col2/8b4def9e7a0ca7f728171765dfa84820da549e63.png" /></p>
 </div>
 </div>
 <div class="cell code" data-execution_count="82"
@@ -1981,7 +1981,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a h
 <span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>casual_fav_end <span class="op">=</span> df[df.member_casual <span class="op">==</span> <span class="st">&#39;casual&#39;</span>].groupby(by<span class="op">=</span><span class="st">&#39;end_station_name&#39;</span>).ride_id.count().sort_values(ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">10</span>)</span></code></pre></div>
 </div>
 <div class="cell code" data-execution_count="85"
-data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:509}"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:825}"
 id="IHXFYmyMEJai" data-outputId="6299b976-84d4-4542-8407-c7213df7aec2">
 <div class="sourceCode" id="cb28"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">2</span>,<span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">16</span>,<span class="dv">9</span>), constrained_layout<span class="op">=</span><span class="va">True</span>)</span>
@@ -2005,7 +2005,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a h
 <span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>,<span class="dv">1</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&quot;Casuals&#39; top 10 end stations&quot;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)<span class="op">;</span></span></code></pre></div>
 <div class="output display_data">
 <p><img
-src="/static/ph/2ced6188a5237f1f0f3306c7489a609756bfc407.png" /></p>
+src="/static/col2/2ced6188a5237f1f0f3306c7489a609756bfc407.png" /></p>
 </div>
 </div>
 <div class="cell code" data-execution_count="86"
@@ -2078,7 +2078,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a h
 <span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.882242</span>,<span class="op">-</span><span class="fl">87.641066</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1)<span class="op">;</span> <span class="co">#Clinton St &amp; Madison St</span></span></code></pre></div>
 </div>
 <div class="cell code" data-execution_count="91"
-data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:539}"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:874}"
 id="bJLa7XcmEZtp" data-outputId="ced6d60c-9160-472b-f518-ff149838a999">
 <div class="sourceCode" id="cb35"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>m_1</span></code></pre></div>
@@ -2358,9 +2358,514 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a h
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
 </div>
 </div>
-<div class="cell code" id="vojZIYohEeh0">
+<div class="cell code" data-execution_count="100"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="vojZIYohEeh0" data-outputId="b1774340-98cd-44de-aef2-fea15e19b86d">
 <div class="sourceCode" id="cb36"><pre
-class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Trip_Duration&quot;</span>,</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;  Mean: </span><span class="sc">{</span>df[<span class="st">&#39;trip_duration_minutes&#39;</span>]<span class="sc">.</span>mean()<span class="sc">}</span><span class="ss">&quot;</span>,</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;  Median: </span><span class="sc">{</span>(df[<span class="st">&#39;trip_duration_minutes&#39;</span>].<span class="bu">max</span>() <span class="op">+</span> df[<span class="st">&#39;trip_duration_minutes&#39;</span>].<span class="bu">min</span>()) <span class="op">/</span> <span class="dv">2</span><span class="sc">}</span><span class="ss">&quot;</span>,</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;  Standart deviation: </span><span class="sc">{</span>df[<span class="st">&#39;trip_duration_minutes&#39;</span>]<span class="sc">.</span>std()<span class="sc">}</span><span class="ss">&quot;</span>,</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>    sep<span class="op">=</span><span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>, end<span class="op">=</span><span class="st">&#39;</span><span class="ch">\n\n</span><span class="st">&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Trip_Duration
+  Mean: 26.039963909940376
+  Median: 26960.691666666666
+  Standart deviation: 208.43972576927288
+
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="99"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="083-lxrJVnP3" data-outputId="1a453722-2b66-4bff-b854-1ded81060889">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;trip_duration_minutes&#39;</span>].<span class="bu">max</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="99">
+<pre><code>53921.6</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="97"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:790}"
+id="aAC325ZuVbcS" data-outputId="01403e69-1d36-4629-e683-699e186ad06a">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="97">
+
+  <div id="df-1a7d6405-ce5a-49c4-9c1a-d0345e7468f2" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ride_id</th>
+      <th>rideable_type</th>
+      <th>started_at</th>
+      <th>ended_at</th>
+      <th>trip_duration_timestamp</th>
+      <th>trip_duration_minutes</th>
+      <th>day_of_week</th>
+      <th>month_started_at</th>
+      <th>start_station_name</th>
+      <th>start_station_id</th>
+      <th>end_station_name</th>
+      <th>end_station_id</th>
+      <th>start_lat</th>
+      <th>start_lng</th>
+      <th>end_lat</th>
+      <th>end_lng</th>
+      <th>member_casual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>C809ED75D6160B2A</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:58:15</td>
+      <td>2021-05-30 12:10:39</td>
+      <td>0 days 00:12:24</td>
+      <td>12.400000</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.900000</td>
+      <td>-87.630000</td>
+      <td>41.89000</td>
+      <td>-87.610000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DD59FDCE0ACACAF3</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:29:14</td>
+      <td>2021-05-30 12:14:09</td>
+      <td>0 days 00:44:55</td>
+      <td>44.916667</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.880000</td>
+      <td>-87.620000</td>
+      <td>41.79000</td>
+      <td>-87.580000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0AB83CB88C43EFC2</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:24:01</td>
+      <td>2021-05-30 14:25:13</td>
+      <td>0 days 00:01:12</td>
+      <td>1.200000</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.920000</td>
+      <td>-87.700000</td>
+      <td>41.92000</td>
+      <td>-87.700000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7881AC6D39110C60</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:25:51</td>
+      <td>2021-05-30 14:41:04</td>
+      <td>0 days 00:15:13</td>
+      <td>15.216667</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.920000</td>
+      <td>-87.700000</td>
+      <td>41.94000</td>
+      <td>-87.690000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>853FA701B4582BAF</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 18:15:39</td>
+      <td>2021-05-30 18:22:32</td>
+      <td>0 days 00:06:53</td>
+      <td>6.883333</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.940000</td>
+      <td>-87.690000</td>
+      <td>41.94000</td>
+      <td>-87.700000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>531628</th>
+      <td>EF56D7D1D612AC11</td>
+      <td>electric_bike</td>
+      <td>2021-05-20 16:32:14</td>
+      <td>2021-05-20 16:35:39</td>
+      <td>0 days 00:03:25</td>
+      <td>3.416667</td>
+      <td>4</td>
+      <td>5</td>
+      <td>Blackstone Ave &amp; Hyde Park Blvd</td>
+      <td>13398</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.802581</td>
+      <td>-87.590230</td>
+      <td>41.80000</td>
+      <td>-87.600000</td>
+      <td>member</td>
+    </tr>
+    <tr>
+      <th>531629</th>
+      <td>745191CB9F21DE3C</td>
+      <td>classic_bike</td>
+      <td>2021-05-29 16:40:37</td>
+      <td>2021-05-29 17:22:37</td>
+      <td>0 days 00:42:00</td>
+      <td>42.000000</td>
+      <td>6</td>
+      <td>5</td>
+      <td>Sheridan Rd &amp; Montrose Ave</td>
+      <td>TA1307000107</td>
+      <td>Michigan Ave &amp; Oak St</td>
+      <td>13042</td>
+      <td>41.961670</td>
+      <td>-87.654640</td>
+      <td>41.90096</td>
+      <td>-87.623777</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>531630</th>
+      <td>428575BAA5356BFF</td>
+      <td>electric_bike</td>
+      <td>2021-05-31 14:24:54</td>
+      <td>2021-05-31 14:31:38</td>
+      <td>0 days 00:06:44</td>
+      <td>6.733333</td>
+      <td>1</td>
+      <td>5</td>
+      <td>Sheridan Rd &amp; Montrose Ave</td>
+      <td>TA1307000107</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.961525</td>
+      <td>-87.654651</td>
+      <td>41.95000</td>
+      <td>-87.650000</td>
+      <td>member</td>
+    </tr>
+    <tr>
+      <th>531631</th>
+      <td>FC8A4A7AB7249662</td>
+      <td>electric_bike</td>
+      <td>2021-05-25 16:01:33</td>
+      <td>2021-05-25 16:07:37</td>
+      <td>0 days 00:06:04</td>
+      <td>6.066667</td>
+      <td>2</td>
+      <td>5</td>
+      <td>Sheridan Rd &amp; Montrose Ave</td>
+      <td>TA1307000107</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.961654</td>
+      <td>-87.654721</td>
+      <td>41.98000</td>
+      <td>-87.660000</td>
+      <td>member</td>
+    </tr>
+    <tr>
+      <th>531632</th>
+      <td>E873B8AA3EE84678</td>
+      <td>docked_bike</td>
+      <td>2021-05-12 12:22:14</td>
+      <td>2021-05-12 12:30:27</td>
+      <td>0 days 00:08:13</td>
+      <td>8.216667</td>
+      <td>3</td>
+      <td>5</td>
+      <td>Sheridan Rd &amp; Montrose Ave</td>
+      <td>TA1307000107</td>
+      <td>Clark St &amp; Grace St</td>
+      <td>TA1307000127</td>
+      <td>41.961670</td>
+      <td>-87.654640</td>
+      <td>41.95078</td>
+      <td>-87.659172</td>
+      <td>casual</td>
+    </tr>
+  </tbody>
+</table>
+<p>531633 rows × 17 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1a7d6405-ce5a-49c4-9c1a-d0345e7468f2')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-1a7d6405-ce5a-49c4-9c1a-d0345e7468f2 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-1a7d6405-ce5a-49c4-9c1a-d0345e7468f2');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-62ba9772-200e-49f2-90d1-dd0bd83617db">
+  <button class="colab-df-quickchart" onclick="quickchart('df-62ba9772-200e-49f2-90d1-dd0bd83617db')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-62ba9772-200e-49f2-90d1-dd0bd83617db button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
 </div>
 </body>
 </html>

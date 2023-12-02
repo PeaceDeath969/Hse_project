@@ -4,5 +4,10 @@ import numpy as np
 
 df = pd.read_csv("mn.csv")
 col_names = df.columns
-col_names = list(col_names)
-print(col_names)
+df['lat'] = df.start_lat
+df['lon'] = df.start_lng
+
+
+st.title("HSE Project")
+st.write("Dashboard for project")
+st.map(df)

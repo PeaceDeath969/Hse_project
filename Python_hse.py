@@ -33,6 +33,7 @@ def index3():
 
 @app.route('/git')
 def index4():
-    return render_template('git.html', head=col_names, rows=hd)
+    return render_template('streamlit.html', head=col_names, rows=hd)
 
-app.run(debug = True)
+if __name__ == '__main__':
+    app.run(debug=True)
