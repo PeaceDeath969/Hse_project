@@ -1,0 +1,49 @@
+{% extends 'index.html' %}
+
+{% block main %}
+<link rel="stylesheet" href="/static/background.css">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">HSE Project</a>
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                {% include 'navitem.html' %}
+            </ul>
+        </div>
+    </div>
+</nav>
+<body >
+<style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 px;
+      max-width: auto;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+  </style>
+<p style="font-weight:bold">Based on the analysis carried out above, I have enough conclusions to present key differences between two types of users:
+
+Casual users rent bikes for almost exactly double the duration of members' rentals (27.2 minutes on average vs 13.6 minutes).
+Members use the bikes consistently during the whole week, with a small peak midweek. Casual users note highest usage during weekend, paired with a rise is duration of the rides.
+Casual users' peak activity falls during late afternoon on workweek days (4–6 p.m), on weekends the peak activity falls between noon and early afternoon.
+Casual users tend to rent the bikes near parks and green spaces, while members prefer locations in proximity of main communication routes.
+Casual users' activity falls significantly during winter months.</p>
+</body>
+{% endblock %}

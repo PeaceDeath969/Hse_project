@@ -1,0 +1,2908 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>109a9de869494e7d80c1153cb2fcba37</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 px;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell code" id="MZfJMfBW8doJ">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> glob</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> folium</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> folium <span class="im">import</span> plugins</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> folium <span class="im">import</span> Choropleth, Circle, Marker</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> folium.plugins <span class="im">import</span> HeatMap, MarkerCluster</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> time <span class="im">import</span> sleep</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:399}"
+id="GRh1-Dki_cjB" data-outputId="b625f2df-8956-4720-d224-b02972bd69e8">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.concat([pd.read_csv(filename, parse_dates<span class="op">=</span>[<span class="st">&#39;started_at&#39;</span>,<span class="st">&#39;ended_at&#39;</span>])</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>              <span class="cf">for</span> filename <span class="kw">in</span> glob.glob(<span class="st">&#39;/mn.csv&#39;</span>)])</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="35">
+
+  <div id="df-eccbb074-ef90-4678-a0b3-c382d1f81485" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ride_id</th>
+      <th>rideable_type</th>
+      <th>started_at</th>
+      <th>ended_at</th>
+      <th>start_station_name</th>
+      <th>start_station_id</th>
+      <th>end_station_name</th>
+      <th>end_station_id</th>
+      <th>start_lat</th>
+      <th>start_lng</th>
+      <th>end_lat</th>
+      <th>end_lng</th>
+      <th>member_casual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>C809ED75D6160B2A</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:58:15</td>
+      <td>2021-05-30 12:10:39</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.90</td>
+      <td>-87.63</td>
+      <td>41.89</td>
+      <td>-87.61</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DD59FDCE0ACACAF3</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:29:14</td>
+      <td>2021-05-30 12:14:09</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.88</td>
+      <td>-87.62</td>
+      <td>41.79</td>
+      <td>-87.58</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0AB83CB88C43EFC2</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:24:01</td>
+      <td>2021-05-30 14:25:13</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.92</td>
+      <td>-87.70</td>
+      <td>41.92</td>
+      <td>-87.70</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7881AC6D39110C60</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:25:51</td>
+      <td>2021-05-30 14:41:04</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.92</td>
+      <td>-87.70</td>
+      <td>41.94</td>
+      <td>-87.69</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>853FA701B4582BAF</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 18:15:39</td>
+      <td>2021-05-30 18:22:32</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.94</td>
+      <td>-87.69</td>
+      <td>41.94</td>
+      <td>-87.70</td>
+      <td>casual</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-eccbb074-ef90-4678-a0b3-c382d1f81485')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-eccbb074-ef90-4678-a0b3-c382d1f81485 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-eccbb074-ef90-4678-a0b3-c382d1f81485');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-89575a0a-fa61-4653-9c1a-72d9b4efb614">
+  <button class="colab-df-quickchart" onclick="quickchart('df-89575a0a-fa61-4653-9c1a-72d9b4efb614')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-89575a0a-fa61-4653-9c1a-72d9b4efb614 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="9bLF-Psp9lcW" data-outputId="9cd7dd2d-5ab2-4889-8a1b-40bc1bb79cfc">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.shape</span></code></pre></div>
+<div class="output execute_result" data-execution_count="36">
+<pre><code>(531633, 13)</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="N8w3yXQ-y5HJ">
+<p>Checking if any other columns need to be fixed:</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="BMLlMD2d9-Ev" data-outputId="46ed37f3-b025-4ed9-9be9-70c25d77c7dd">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code></pre></div>
+<div class="output execute_result" data-execution_count="37">
+<pre><code>ride_id                       object
+rideable_type                 object
+started_at            datetime64[ns]
+ended_at              datetime64[ns]
+start_station_name            object
+start_station_id              object
+end_station_name              object
+end_station_id                object
+start_lat                    float64
+start_lng                    float64
+end_lat                      float64
+end_lng                      float64
+member_casual                 object
+dtype: object</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="qvhAaj9p-CyF" data-outputId="03533935-3721-48db-c820-756ec3ee5eac">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="38">
+<pre><code>ride_id                   0
+rideable_type             0
+started_at                0
+ended_at                  0
+start_station_name    53744
+start_station_id      53744
+end_station_name      58194
+end_station_id        58194
+start_lat                 0
+start_lng                 0
+end_lat                 452
+end_lng                 452
+member_casual             0
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="fSE7857wzC89">
+<p>Most of the missing values are associated with station names. I
+decided to leave it this way, at least for now. The important thing is
+that the columns responsible for storing the IDs of rides, start/end
+time of trips and user type are not NULL.</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:174}"
+id="LLG34OmJ-Ijv" data-outputId="17c716d9-805e-4fd4-f237-d3452579c98b">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">&#39;rideable_type&#39;</span>).agg(<span class="kw">lambda</span> x: x.isna().<span class="bu">sum</span>())</span></code></pre></div>
+<div class="output execute_result" data-execution_count="39">
+
+  <div id="df-d8958064-45cb-4a66-b886-5ba1be0a2c2d" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ride_id</th>
+      <th>started_at</th>
+      <th>ended_at</th>
+      <th>start_station_name</th>
+      <th>start_station_id</th>
+      <th>end_station_name</th>
+      <th>end_station_id</th>
+      <th>start_lat</th>
+      <th>start_lng</th>
+      <th>end_lat</th>
+      <th>end_lng</th>
+      <th>member_casual</th>
+    </tr>
+    <tr>
+      <th>rideable_type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>classic_bike</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>763</td>
+      <td>763</td>
+      <td>0</td>
+      <td>0</td>
+      <td>452</td>
+      <td>452</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>docked_bike</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>electric_bike</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53744</td>
+      <td>53744</td>
+      <td>57431</td>
+      <td>57431</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d8958064-45cb-4a66-b886-5ba1be0a2c2d')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-d8958064-45cb-4a66-b886-5ba1be0a2c2d button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-d8958064-45cb-4a66-b886-5ba1be0a2c2d');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-82e8249b-11c5-4c9d-8066-24d56a3c6f8b">
+  <button class="colab-df-quickchart" onclick="quickchart('df-82e8249b-11c5-4c9d-8066-24d56a3c6f8b')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-82e8249b-11c5-4c9d-8066-24d56a3c6f8b button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="G_gcQ5Jazix8">
+<p>First, I wanted to check who are the majority of users - members or
+casual users.</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:256}"
+id="xYujVy3a-P7L" data-outputId="d2e19d80-e7ab-400d-e20e-0b8677e5fc35">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">2</span>))</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>palette <span class="op">=</span> {<span class="st">&#39;member&#39;</span>: <span class="st">&#39;forestgreen&#39;</span>, <span class="st">&#39;casual&#39;</span>: <span class="st">&#39;darkorange&#39;</span>}</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.countplot(y<span class="op">=</span>df.member_casual, palette<span class="op">=</span>palette)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Number of rentals per user type&quot;</span>)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Number of rentals&#39;</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;User type&#39;</span>, size<span class="op">=</span><span class="dv">12</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="/static/col1/a93796b0ae5811cf27069930b99093a98f3f8bcb.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="JUNlhBWH-wHb" data-outputId="cd3bc957-d4b5-4a97-b53a-b7fa7531679f">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df.member_casual.value_counts()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="41">
+<pre><code>member    274717
+casual    256916
+Name: member_casual, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="L2bW95_2zONY">
+<p>Now let's calculate duration of each trip:</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="xgmdCWpXAZYT" data-outputId="8e768cc9-e716-4c1d-a0ba-8fa8ebf75edc">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;trip_duration_timestamp&#39;</span>] <span class="op">=</span> df.ended_at <span class="op">-</span> df.started_at</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df.trip_duration_timestamp.describe()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="45">
+<pre><code>count                       531633
+mean     0 days 00:26:02.397834596
+std      0 days 03:28:26.383546156
+min              -1 days +23:59:47
+25%                0 days 00:07:31
+50%                0 days 00:13:39
+75%                0 days 00:25:21
+max               37 days 10:41:36
+Name: trip_duration_timestamp, dtype: object</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:399}"
+id="j1Z83w1F-0Nv" data-outputId="64f79f0d-63b5-43b5-f235-db30223bf438">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;trip_duration_minutes&#39;</span>] <span class="op">=</span> (df.trip_duration_timestamp.dt.total_seconds()<span class="op">/</span><span class="dv">60</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="44">
+
+  <div id="df-6915fa14-d9f5-4fe1-95a1-f01f795b3912" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ride_id</th>
+      <th>rideable_type</th>
+      <th>started_at</th>
+      <th>ended_at</th>
+      <th>start_station_name</th>
+      <th>start_station_id</th>
+      <th>end_station_name</th>
+      <th>end_station_id</th>
+      <th>start_lat</th>
+      <th>start_lng</th>
+      <th>end_lat</th>
+      <th>end_lng</th>
+      <th>member_casual</th>
+      <th>trip_duration_timestamp</th>
+      <th>trip_duration_minutes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>C809ED75D6160B2A</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:58:15</td>
+      <td>2021-05-30 12:10:39</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.90</td>
+      <td>-87.63</td>
+      <td>41.89</td>
+      <td>-87.61</td>
+      <td>casual</td>
+      <td>0 days 00:12:24</td>
+      <td>12.400000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DD59FDCE0ACACAF3</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:29:14</td>
+      <td>2021-05-30 12:14:09</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.88</td>
+      <td>-87.62</td>
+      <td>41.79</td>
+      <td>-87.58</td>
+      <td>casual</td>
+      <td>0 days 00:44:55</td>
+      <td>44.916667</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0AB83CB88C43EFC2</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:24:01</td>
+      <td>2021-05-30 14:25:13</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.92</td>
+      <td>-87.70</td>
+      <td>41.92</td>
+      <td>-87.70</td>
+      <td>casual</td>
+      <td>0 days 00:01:12</td>
+      <td>1.200000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7881AC6D39110C60</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:25:51</td>
+      <td>2021-05-30 14:41:04</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.92</td>
+      <td>-87.70</td>
+      <td>41.94</td>
+      <td>-87.69</td>
+      <td>casual</td>
+      <td>0 days 00:15:13</td>
+      <td>15.216667</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>853FA701B4582BAF</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 18:15:39</td>
+      <td>2021-05-30 18:22:32</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.94</td>
+      <td>-87.69</td>
+      <td>41.94</td>
+      <td>-87.70</td>
+      <td>casual</td>
+      <td>0 days 00:06:53</td>
+      <td>6.883333</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-6915fa14-d9f5-4fe1-95a1-f01f795b3912')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-6915fa14-d9f5-4fe1-95a1-f01f795b3912 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-6915fa14-d9f5-4fe1-95a1-f01f795b3912');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-a290f5e5-58e1-4b59-afd6-ec45da7b3a75">
+  <button class="colab-df-quickchart" onclick="quickchart('df-a290f5e5-58e1-4b59-afd6-ec45da7b3a75')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-a290f5e5-58e1-4b59-afd6-ec45da7b3a75 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="mT0gns3uBKYn" data-outputId="19cbf333-a3e1-45d4-d15e-32817bd883e8">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code></pre></div>
+<div class="output execute_result" data-execution_count="46">
+<pre><code>ride_id                             object
+rideable_type                       object
+started_at                  datetime64[ns]
+ended_at                    datetime64[ns]
+start_station_name                  object
+start_station_id                    object
+end_station_name                    object
+end_station_id                      object
+start_lat                          float64
+start_lng                          float64
+end_lat                            float64
+end_lng                            float64
+member_casual                       object
+trip_duration_timestamp    timedelta64[ns]
+trip_duration_minutes              float64
+dtype: object</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="N-kUr9TQztci">
+<p>Calculating average trip duration for members and casual users:¶</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:256}"
+id="k3v_fMl2BTcN" data-outputId="c6fc2f04-71a9-47dd-de83-e5eed78d731f">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>avg_trip_duration <span class="op">=</span> df.groupby(by<span class="op">=</span><span class="st">&#39;member_casual&#39;</span>).trip_duration_minutes.mean()</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">2</span>))</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>palette <span class="op">=</span> {<span class="st">&#39;member&#39;</span>: <span class="st">&#39;forestgreen&#39;</span>, <span class="st">&#39;casual&#39;</span>: <span class="st">&#39;darkorange&#39;</span>}</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.barplot(x<span class="op">=</span>avg_trip_duration, y<span class="op">=</span>avg_trip_duration.index, palette<span class="op">=</span>palette)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Average trip duration&quot;</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Trip duration [minutes]&#39;</span>)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;User type&#39;</span>, size<span class="op">=</span><span class="dv">12</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="/static/col1/041b372d6593727a0288e8c45f1240ba5c050fc9.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="AeXaUu9kBY1q" data-outputId="69b0decd-bc53-4d87-886f-a91e3f762c0a">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>avg_trip_duration</span></code></pre></div>
+<div class="output execute_result" data-execution_count="49">
+<pre><code>member_casual
+casual    38.230966
+member    14.638909
+Name: trip_duration_minutes, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:399}"
+id="6sgD_pWRB1vA" data-outputId="30c81c1f-12c4-4f55-be1b-ad3d8f5a520b">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;day_of_week&#39;</span>] <span class="op">=</span>  df.started_at.<span class="bu">apply</span>(<span class="kw">lambda</span> x: x.isoweekday())</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;month_started_at&#39;</span>] <span class="op">=</span>  df.started_at.dt.month</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [<span class="st">&#39;ride_id&#39;</span>, <span class="st">&#39;rideable_type&#39;</span>, <span class="st">&#39;started_at&#39;</span>, <span class="st">&#39;ended_at&#39;</span>,<span class="st">&#39;trip_duration_timestamp&#39;</span>, <span class="st">&#39;trip_duration_minutes&#39;</span>, <span class="st">&#39;day_of_week&#39;</span>,<span class="st">&#39;month_started_at&#39;</span>, <span class="st">&#39;start_station_name&#39;</span>, <span class="st">&#39;start_station_id&#39;</span>, <span class="st">&#39;end_station_name&#39;</span>,</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>       <span class="st">&#39;end_station_id&#39;</span>, <span class="st">&#39;start_lat&#39;</span>, <span class="st">&#39;start_lng&#39;</span>, <span class="st">&#39;end_lat&#39;</span>, <span class="st">&#39;end_lng&#39;</span>, <span class="st">&#39;member_casual&#39;</span>]</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[cols]</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="55">
+
+  <div id="df-bf0190c6-ea1c-4a22-a000-e327047fac8f" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ride_id</th>
+      <th>rideable_type</th>
+      <th>started_at</th>
+      <th>ended_at</th>
+      <th>trip_duration_timestamp</th>
+      <th>trip_duration_minutes</th>
+      <th>day_of_week</th>
+      <th>month_started_at</th>
+      <th>start_station_name</th>
+      <th>start_station_id</th>
+      <th>end_station_name</th>
+      <th>end_station_id</th>
+      <th>start_lat</th>
+      <th>start_lng</th>
+      <th>end_lat</th>
+      <th>end_lng</th>
+      <th>member_casual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>C809ED75D6160B2A</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:58:15</td>
+      <td>2021-05-30 12:10:39</td>
+      <td>0 days 00:12:24</td>
+      <td>12.400000</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.90</td>
+      <td>-87.63</td>
+      <td>41.89</td>
+      <td>-87.61</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DD59FDCE0ACACAF3</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:29:14</td>
+      <td>2021-05-30 12:14:09</td>
+      <td>0 days 00:44:55</td>
+      <td>44.916667</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.88</td>
+      <td>-87.62</td>
+      <td>41.79</td>
+      <td>-87.58</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0AB83CB88C43EFC2</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:24:01</td>
+      <td>2021-05-30 14:25:13</td>
+      <td>0 days 00:01:12</td>
+      <td>1.200000</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.92</td>
+      <td>-87.70</td>
+      <td>41.92</td>
+      <td>-87.70</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7881AC6D39110C60</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:25:51</td>
+      <td>2021-05-30 14:41:04</td>
+      <td>0 days 00:15:13</td>
+      <td>15.216667</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.92</td>
+      <td>-87.70</td>
+      <td>41.94</td>
+      <td>-87.69</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>853FA701B4582BAF</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 18:15:39</td>
+      <td>2021-05-30 18:22:32</td>
+      <td>0 days 00:06:53</td>
+      <td>6.883333</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.94</td>
+      <td>-87.69</td>
+      <td>41.94</td>
+      <td>-87.70</td>
+      <td>casual</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bf0190c6-ea1c-4a22-a000-e327047fac8f')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-bf0190c6-ea1c-4a22-a000-e327047fac8f button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-bf0190c6-ea1c-4a22-a000-e327047fac8f');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-04e19827-22a3-4b6f-9f09-219889ecd6c3">
+  <button class="colab-df-quickchart" onclick="quickchart('df-04e19827-22a3-4b6f-9f09-219889ecd6c3')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-04e19827-22a3-4b6f-9f09-219889ecd6c3 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" id="uyF_jZ4DBjP9">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df_s<span class="op">=</span>df.sample(<span class="dv">100000</span>).copy()</span></code></pre></div>
+</div>
+<div class="cell markdown" id="JAUi7D1cz2Ev">
+<p>Next thing I checked was the distribution of bike trips over time
+(days of week). I wanted to get to know the general pattern of bikeshare
+usage and see if there are any differences between user types.</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:631}"
+id="iHBWOQPQBeJk" data-outputId="b1c48f44-20ee-408e-de97-1e790012d808">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>labels <span class="op">=</span> [<span class="st">&#39;Monday&#39;</span>, <span class="st">&quot;Tuesday&quot;</span>, <span class="st">&#39;Wednesday&#39;</span>, <span class="st">&#39;Thursday&#39;</span>, <span class="st">&#39;Friday&#39;</span>, <span class="st">&#39;Saturday&#39;</span>, <span class="st">&#39;Sunday&#39;</span>]</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>palette <span class="op">=</span> {<span class="st">&#39;member&#39;</span>: <span class="st">&#39;forestgreen&#39;</span>, <span class="st">&#39;casual&#39;</span>: <span class="st">&#39;darkorange&#39;</span>}</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">6</span>))</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>ax<span class="op">=</span>sns.barplot(x<span class="op">=</span>df_s.day_of_week, y<span class="op">=</span>df_s.trip_duration_minutes,</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>               estimator<span class="op">=</span><span class="bu">sum</span>, hue<span class="op">=</span>df_s.member_casual, palette<span class="op">=</span>palette)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Total trip duration&quot;</span>)</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Day of week&quot;</span>)</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Total trip durations [minutes]&quot;</span>)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>ax.set_xticklabels(labels, rotation<span class="op">=</span><span class="st">&#39;vertical&#39;</span>, fontsize<span class="op">=</span><span class="dv">10</span>)<span class="op">;</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="/static/col1/4d513a7b13f257a273dd75adf7d661f2fcaeffc5.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="WL11BUxV0F30">
+<p>Next step was to check any patterns related to the time of the
+day:</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}"
+id="fuhoikr_Dkfa" data-outputId="a771b162-9bdc-4869-dd11-89da9cc7ecce">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">7</span>,<span class="dv">1</span>, sharey<span class="op">=</span><span class="va">True</span>, figsize<span class="op">=</span>(<span class="dv">12</span>,<span class="dv">20</span>), constrained_layout<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">&#39;Ride count by hour and day&#39;</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co">#1</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>monday <span class="op">=</span> df[df.day_of_week <span class="op">==</span> <span class="dv">1</span>]</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>sns.countplot(ax<span class="op">=</span>axes[<span class="dv">0</span>], data <span class="op">=</span> monday, x<span class="op">=</span>monday.started_at.dt.hour, hue<span class="op">=</span><span class="st">&#39;member_casual&#39;</span>, palette<span class="op">=</span>palette)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Monday&#39;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co">#2</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>tuesday <span class="op">=</span> df[df.day_of_week <span class="op">==</span> <span class="dv">2</span>]</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>sns.countplot(ax<span class="op">=</span>axes[<span class="dv">1</span>], data <span class="op">=</span> tuesday, x<span class="op">=</span>tuesday.started_at.dt.hour, hue<span class="op">=</span><span class="st">&#39;member_casual&#39;</span>, palette<span class="op">=</span>palette)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Tuesday&#39;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="co">#3</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>wednesday <span class="op">=</span> df[df.day_of_week <span class="op">==</span> <span class="dv">3</span>]</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>sns.countplot(ax<span class="op">=</span>axes[<span class="dv">2</span>], data <span class="op">=</span> wednesday, x<span class="op">=</span>wednesday.started_at.dt.hour, hue<span class="op">=</span><span class="st">&#39;member_casual&#39;</span>, palette<span class="op">=</span>palette)</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">2</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Wednesday&#39;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a><span class="co">#4</span></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>thursday <span class="op">=</span> df[df.day_of_week <span class="op">==</span> <span class="dv">4</span>]</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>sns.countplot(ax<span class="op">=</span>axes[<span class="dv">3</span>], data <span class="op">=</span> thursday, x<span class="op">=</span>thursday.started_at.dt.hour, hue<span class="op">=</span><span class="st">&#39;member_casual&#39;</span>, palette<span class="op">=</span>palette)</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">3</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Thursday&#39;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a><span class="co">#5</span></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>friday <span class="op">=</span> df[df.day_of_week <span class="op">==</span> <span class="dv">5</span>]</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>sns.countplot(ax<span class="op">=</span>axes[<span class="dv">4</span>], data <span class="op">=</span> friday, x<span class="op">=</span>friday.started_at.dt.hour, hue<span class="op">=</span><span class="st">&#39;member_casual&#39;</span>, palette<span class="op">=</span>palette)</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">4</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Friday&#39;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a><span class="co">#6</span></span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>saturday <span class="op">=</span> df[df.day_of_week <span class="op">==</span> <span class="dv">6</span>]</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>sns.countplot(ax<span class="op">=</span>axes[<span class="dv">5</span>], data <span class="op">=</span> saturday, x<span class="op">=</span>saturday.started_at.dt.hour, hue<span class="op">=</span><span class="st">&#39;member_casual&#39;</span>, palette<span class="op">=</span>palette)</span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">5</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Saturday&#39;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a><span class="co">#7</span></span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>sunday <span class="op">=</span> df[df.day_of_week <span class="op">==</span> <span class="dv">7</span>]</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>sns.countplot(ax<span class="op">=</span>axes[<span class="dv">6</span>], data <span class="op">=</span> sunday, x<span class="op">=</span>sunday.started_at.dt.hour, hue<span class="op">=</span><span class="st">&#39;member_casual&#39;</span>, palette<span class="op">=</span>palette)</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">6</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&#39;Sunday&#39;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="/static/col1/ef971ba46ac8855f1f5e5c1e6d1804ee51f353b9.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="OWW3Pum00KS8">
+<p>Next thing I wanted to analyze was the difference in preferences
+regarding particular bike types:</p>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:295}"
+id="E9tzEX0oD2yq" data-outputId="5867aaec-ea6f-4da8-bd9b-f14b0125e640">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="fl">2.5</span>))</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>palette <span class="op">=</span> {<span class="st">&#39;member&#39;</span>: <span class="st">&#39;forestgreen&#39;</span>, <span class="st">&#39;casual&#39;</span>: <span class="st">&#39;darkorange&#39;</span>}</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>sns.countplot(y<span class="op">=</span>df_s.rideable_type, hue<span class="op">=</span>df_s.member_casual, palette<span class="op">=</span>palette)</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Number of rentals per user type&quot;</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Number of rentals&#39;</span>)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Rideable type&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="/static/col1/8b4def9e7a0ca7f728171765dfa84820da549e63.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:73}"
+id="rOhrDDzJD9sK" data-outputId="a050a0b9-8bfd-4167-a564-03b420a62b19">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df[(df.rideable_type <span class="op">==</span> <span class="st">&#39;docked_bike&#39;</span>) <span class="op">&amp;</span> (df.member_casual <span class="op">==</span> <span class="st">&#39;member&#39;</span>)]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="82">
+
+  <div id="df-fad29e69-6aeb-4f4c-bbf7-1aaee6892466" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ride_id</th>
+      <th>rideable_type</th>
+      <th>started_at</th>
+      <th>ended_at</th>
+      <th>trip_duration_timestamp</th>
+      <th>trip_duration_minutes</th>
+      <th>day_of_week</th>
+      <th>month_started_at</th>
+      <th>start_station_name</th>
+      <th>start_station_id</th>
+      <th>end_station_name</th>
+      <th>end_station_id</th>
+      <th>start_lat</th>
+      <th>start_lng</th>
+      <th>end_lat</th>
+      <th>end_lng</th>
+      <th>member_casual</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-fad29e69-6aeb-4f4c-bbf7-1aaee6892466')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-fad29e69-6aeb-4f4c-bbf7-1aaee6892466 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-fad29e69-6aeb-4f4c-bbf7-1aaee6892466');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="W6DBdD4e0PDP">
+<p>Last thing left to check whether there was any difference in
+particular stations popularity. To analyze that, I created series as
+below:</p>
+</div>
+<div class="cell code" id="3Cu5tHSBECyG">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>mem_fav_start <span class="op">=</span> df[df.member_casual <span class="op">==</span> <span class="st">&#39;member&#39;</span>].groupby(by<span class="op">=</span><span class="st">&#39;start_station_name&#39;</span>).ride_id.count().sort_values(ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">10</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>casual_fav_start <span class="op">=</span> df[df.member_casual <span class="op">==</span> <span class="st">&#39;casual&#39;</span>].groupby(by<span class="op">=</span><span class="st">&#39;start_station_name&#39;</span>).ride_id.count().sort_values(ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">10</span>)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>mem_fav_end <span class="op">=</span> df[df.member_casual <span class="op">==</span> <span class="st">&#39;member&#39;</span>].groupby(by<span class="op">=</span><span class="st">&#39;end_station_name&#39;</span>).ride_id.count().sort_values(ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">10</span>)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>casual_fav_end <span class="op">=</span> df[df.member_casual <span class="op">==</span> <span class="st">&#39;casual&#39;</span>].groupby(by<span class="op">=</span><span class="st">&#39;end_station_name&#39;</span>).ride_id.count().sort_values(ascending <span class="op">=</span> <span class="va">False</span>).head(<span class="dv">10</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:825}"
+id="IHXFYmyMEJai" data-outputId="6299b976-84d4-4542-8407-c7213df7aec2">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">2</span>,<span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">16</span>,<span class="dv">9</span>), constrained_layout<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">&#39;Ride count by hour and day&#39;</span>)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co">#1</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.barplot(ax<span class="op">=</span>axes[<span class="dv">0</span>,<span class="dv">0</span>], x<span class="op">=</span>mem_fav_start, y<span class="op">=</span>mem_fav_start.index, orient<span class="op">=</span><span class="st">&#39;h&#39;</span>)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>ax.set_yticklabels(mem_fav_start.index, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>,<span class="dv">0</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&quot;Members&#39; top 10 start stations&quot;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Favourite start station - members&quot;</span>)</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="co">#2</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.barplot(ax<span class="op">=</span>axes[<span class="dv">0</span>,<span class="dv">1</span>], x<span class="op">=</span>casual_fav_start, y<span class="op">=</span>casual_fav_start.index, orient<span class="op">=</span><span class="st">&#39;h&#39;</span>)</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>ax.set_yticklabels(casual_fav_start.index , fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>,<span class="dv">1</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&quot;Casuals&#39; top 10 start stations&quot;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>,ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a><span class="co">#3</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.barplot(ax<span class="op">=</span>axes[<span class="dv">1</span>,<span class="dv">0</span>], x<span class="op">=</span>mem_fav_end, y<span class="op">=</span>mem_fav_end.index, orient<span class="op">=</span><span class="st">&#39;h&#39;</span>)</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>ax.set_yticklabels(mem_fav_end.index, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>,<span class="dv">0</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&quot;Members&#39; top 10 end stations&quot;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a><span class="co">#4</span></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.barplot(ax<span class="op">=</span>axes[<span class="dv">1</span>,<span class="dv">1</span>], x<span class="op">=</span>casual_fav_end, y<span class="op">=</span>casual_fav_end.index, orient<span class="op">=</span><span class="st">&#39;h&#39;</span>)</span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>ax.set_yticklabels(casual_fav_end.index, fontsize<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>,<span class="dv">1</span>].<span class="bu">set</span>(title<span class="op">=</span><span class="st">&quot;Casuals&#39; top 10 end stations&quot;</span>, xlabel<span class="op">=</span><span class="st">&quot;&quot;</span>, ylabel<span class="op">=</span><span class="st">&quot;&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="/static/col1/2ced6188a5237f1f0f3306c7489a609756bfc407.png" /></p>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="o2SJK_Y5DcV4" data-outputId="2dbe86f3-b71b-4704-f8cc-2f4962a97117">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> mem_fav_start.index.tolist():</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="kw">in</span> mem_fav_end.index.tolist():</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span> (i)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">pass</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Clark St &amp; Elm St
+Wells St &amp; Concord Ln
+Kingsbury St &amp; Kinzie St
+Wells St &amp; Elm St
+Dearborn St &amp; Erie St
+Streeter Dr &amp; Grand Ave
+Wells St &amp; Huron St
+Lake Shore Dr &amp; North Blvd
+Clark St &amp; Lincoln Ave
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="F-hztk7TEPqM" data-outputId="e6537370-7301-4a17-bb8b-f4c58a61a0e8">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> casual_fav_start.index.tolist():</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="kw">in</span> casual_fav_end.index.tolist():</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span> (i)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">pass</span></span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Streeter Dr &amp; Grand Ave
+Lake Shore Dr &amp; Monroe St
+Millennium Park
+Michigan Ave &amp; Oak St
+Lake Shore Dr &amp; North Blvd
+Shedd Aquarium
+Theater on the Lake
+Wabash Ave &amp; Grand Ave
+</code></pre>
+</div>
+</div>
+<div class="cell code" id="n58rrNiVESA8">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>m_1 <span class="op">=</span> folium.Map(location<span class="op">=</span>[<span class="fl">41.89092240641929</span>, <span class="op">-</span><span class="fl">87.63446790046244</span>], tiles<span class="op">=</span><span class="st">&#39;cartodbpositron&#39;</span>, zoom_start<span class="op">=</span><span class="dv">13</span>)</span></code></pre></div>
+</div>
+<div class="cell code" id="dY3TFTgZEWD8">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Casual - darkorange</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.892278</span>,<span class="op">-</span><span class="fl">87.612043</span>],color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>).add_to(m_1) <span class="co">#Streeter Dr &amp; Grand Ave</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.881032</span>,<span class="op">-</span><span class="fl">87.624084</span>],color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>).add_to(m_1) <span class="co">#Millennium Park</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.900960</span>,<span class="op">-</span><span class="fl">87.623777</span>],color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>).add_to(m_1) <span class="co">#Michigan Ave &amp; Oak St</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.867226</span>,<span class="op">-</span><span class="fl">87.615355</span>],color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>).add_to(m_1) <span class="co">#Shedd Aquarium</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.926277</span>,<span class="op">-</span><span class="fl">87.630834</span>],color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>).add_to(m_1) <span class="co">#Theater on the Lake</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.912133</span>,<span class="op">-</span><span class="fl">87.634656</span>],color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>).add_to(m_1) <span class="co">#Wells St &amp; Concord Ln</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.915709</span>,<span class="op">-</span><span class="fl">87.634608</span>],color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>).add_to(m_1) <span class="co">#Clark St &amp; Lincoln Ave</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.880958</span>,<span class="op">-</span><span class="fl">87.616743</span>],color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;darkorange&#39;</span>).add_to(m_1) <span class="co">#Lake Shore Dr &amp; Monroe St</span></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="co">#Member - green</span></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.902973</span>, <span class="op">-</span><span class="fl">87.63128</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1) <span class="co">#Clark St &amp; Elm St</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.912133</span>,<span class="op">-</span><span class="fl">87.634656</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1) <span class="co">#Wells St &amp; Concord Ln</span></span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.889245</span>,<span class="op">-</span><span class="fl">87.63874</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1) <span class="co">#Kingsbury St &amp; Kinzie St</span></span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.903222</span>,<span class="op">-</span><span class="fl">87.634324</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1) <span class="co">#Wells St &amp; Elm St</span></span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.893992</span>,<span class="op">-</span><span class="fl">87.629318</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1) <span class="co">#Dearborn St &amp; Erie St</span></span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.894722</span>,<span class="op">-</span><span class="fl">87.634362</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1) <span class="co">#Wells St &amp; Huron St</span></span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.893442</span>,<span class="op">-</span><span class="fl">87.622944</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1) <span class="co">#St. Clair St &amp; Erie St</span></span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.937582</span>,<span class="op">-</span><span class="fl">87.644098</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1) <span class="co">#Broadway &amp; Barry Ave</span></span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>Circle([<span class="fl">41.882242</span>,<span class="op">-</span><span class="fl">87.641066</span>],color<span class="op">=</span><span class="st">&#39;green&#39;</span>, fill_color<span class="op">=</span><span class="st">&#39;green&#39;</span>).add_to(m_1)<span class="op">;</span> <span class="co">#Clinton St &amp; Madison St</span></span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:874}"
+id="bJLa7XcmEZtp" data-outputId="ced6d60c-9160-472b-f518-ff149838a999">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>m_1</span></code></pre></div>
+<div class="output execute_result" data-execution_count="91">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_9c097ea45c4f37c70bf4515bce9c7107 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_9c097ea45c4f37c70bf4515bce9c7107&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_9c097ea45c4f37c70bf4515bce9c7107 = L.map(
+                &quot;map_9c097ea45c4f37c70bf4515bce9c7107&quot;,
+                {
+                    center: [41.89092240641929, -87.63446790046244],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7558ce51538fe29e85040cc0a98de22 = L.tileLayer(
+                &quot;https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://cartodb.com/attributions\&quot;\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\&quot;_blank\&quot; href =\&quot;http://cartodb.com/attributions\&quot;\u003eattributions\u003c/a\u003e&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_0b7102ee9b235fdef5c4b0af2518923d = L.circle(
+                [41.892278, -87.612043],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_b509de6cb36abffcde761ca0288dbc1b = L.circle(
+                [41.881032, -87.624084],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_36b1e5f0b84c0c181d206ab354bd93a7 = L.circle(
+                [41.90096, -87.623777],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_22bbac07771b1e76864dba5f444f06ad = L.circle(
+                [41.867226, -87.615355],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_ff25c6c3e94ac741892372d460baff10 = L.circle(
+                [41.926277, -87.630834],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_dd9a8bdb23e68ccfd477ed07b79ff808 = L.circle(
+                [41.912133, -87.634656],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_917cecec9b0113d14691fbff5c6ea23e = L.circle(
+                [41.915709, -87.634608],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_486756eac2ee82b22aade7026f4135e1 = L.circle(
+                [41.880958, -87.616743],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_51d91044c120eefe1d0aaf46cddec6f2 = L.circle(
+                [41.902973, -87.63128],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_9413245539d326f95f9c3b50ec707efc = L.circle(
+                [41.912133, -87.634656],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_03f143909417bded2f7eadc4a3a48f0a = L.circle(
+                [41.889245, -87.63874],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_8be5e3177706cfc8ae2423c9ba83413f = L.circle(
+                [41.903222, -87.634324],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_53dc69aa80689ab11f6827d76fa8a752 = L.circle(
+                [41.893992, -87.629318],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_ff0afd30f6913a2756fdd3e5e6844c85 = L.circle(
+                [41.894722, -87.634362],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_1428738fbb862eb67d97ac83522bd51c = L.circle(
+                [41.893442, -87.622944],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_98e9148eb7697cc1e508d24e79167a6d = L.circle(
+                [41.937582, -87.644098],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_0857da61d6a1d59312c0796fdf2ebe8d = L.circle(
+                [41.882242, -87.641066],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_e6bb00b5416474a7e5132586da82292e = L.circle(
+                [41.892278, -87.612043],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_4bbb1a69329a42900dd0e6d64d0813a2 = L.circle(
+                [41.881032, -87.624084],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_5ae5ef7d2500f7bc10cd0a4d9008e697 = L.circle(
+                [41.90096, -87.623777],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_35271d1af408ef035f843670c451b243 = L.circle(
+                [41.867226, -87.615355],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_48decd66132192297c636f31f4695de9 = L.circle(
+                [41.926277, -87.630834],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_3e5b68327b6dfd5dd951c5008fa22364 = L.circle(
+                [41.912133, -87.634656],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_b5715ba1efd608bcb25eeccb316aea2d = L.circle(
+                [41.915709, -87.634608],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_1a1b4952c471144b0d800b56b7f7bceb = L.circle(
+                [41.880958, -87.616743],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkorange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;darkorange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_b4c9cde0b3f05797fe3421fec547a398 = L.circle(
+                [41.902973, -87.63128],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_8ad76b970a61d90fab056f893778145a = L.circle(
+                [41.912133, -87.634656],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_07afe9486de590514d3e87871d1f7cc9 = L.circle(
+                [41.889245, -87.63874],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_39f37686fbad30a7e40d79b1856db9d3 = L.circle(
+                [41.903222, -87.634324],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_09ee4d0141bfa6cb3116cfe542276a38 = L.circle(
+                [41.893992, -87.629318],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_51b2fb17e8cf07ba98203124f73e9db3 = L.circle(
+                [41.894722, -87.634362],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_19dced782d8b8b2a5a5a8e34f6eaafb0 = L.circle(
+                [41.893442, -87.622944],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_e4310a729de37bbe205a39a028bdab9e = L.circle(
+                [41.937582, -87.644098],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+    
+            var circle_c188121e70d57ec3e6f94a5d647861aa = L.circle(
+                [41.882242, -87.641066],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_9c097ea45c4f37c70bf4515bce9c7107);
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="vojZIYohEeh0" data-outputId="b1774340-98cd-44de-aef2-fea15e19b86d">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Trip_Duration&quot;</span>,</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;  Mean: </span><span class="sc">{</span>df[<span class="st">&#39;trip_duration_minutes&#39;</span>]<span class="sc">.</span>mean()<span class="sc">}</span><span class="ss">&quot;</span>,</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;  Median: </span><span class="sc">{</span>(df[<span class="st">&#39;trip_duration_minutes&#39;</span>].<span class="bu">max</span>() <span class="op">+</span> df[<span class="st">&#39;trip_duration_minutes&#39;</span>].<span class="bu">min</span>()) <span class="op">/</span> <span class="dv">2</span><span class="sc">}</span><span class="ss">&quot;</span>,</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>    <span class="ss">f&quot;  Standart deviation: </span><span class="sc">{</span>df[<span class="st">&#39;trip_duration_minutes&#39;</span>]<span class="sc">.</span>std()<span class="sc">}</span><span class="ss">&quot;</span>,</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>    sep<span class="op">=</span><span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>, end<span class="op">=</span><span class="st">&#39;</span><span class="ch">\n\n</span><span class="st">&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Trip_Duration
+  Mean: 26.039963909940376
+  Median: 26960.691666666666
+  Standart deviation: 208.43972576927288
+
+</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="083-lxrJVnP3" data-outputId="1a453722-2b66-4bff-b854-1ded81060889">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;trip_duration_minutes&#39;</span>].<span class="bu">max</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="99">
+<pre><code>53921.6</code></pre>
+</div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:790}"
+id="aAC325ZuVbcS" data-outputId="01403e69-1d36-4629-e683-699e186ad06a">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="97">
+
+  <div id="df-1a7d6405-ce5a-49c4-9c1a-d0345e7468f2" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ride_id</th>
+      <th>rideable_type</th>
+      <th>started_at</th>
+      <th>ended_at</th>
+      <th>trip_duration_timestamp</th>
+      <th>trip_duration_minutes</th>
+      <th>day_of_week</th>
+      <th>month_started_at</th>
+      <th>start_station_name</th>
+      <th>start_station_id</th>
+      <th>end_station_name</th>
+      <th>end_station_id</th>
+      <th>start_lat</th>
+      <th>start_lng</th>
+      <th>end_lat</th>
+      <th>end_lng</th>
+      <th>member_casual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>C809ED75D6160B2A</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:58:15</td>
+      <td>2021-05-30 12:10:39</td>
+      <td>0 days 00:12:24</td>
+      <td>12.400000</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.900000</td>
+      <td>-87.630000</td>
+      <td>41.89000</td>
+      <td>-87.610000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>DD59FDCE0ACACAF3</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 11:29:14</td>
+      <td>2021-05-30 12:14:09</td>
+      <td>0 days 00:44:55</td>
+      <td>44.916667</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.880000</td>
+      <td>-87.620000</td>
+      <td>41.79000</td>
+      <td>-87.580000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0AB83CB88C43EFC2</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:24:01</td>
+      <td>2021-05-30 14:25:13</td>
+      <td>0 days 00:01:12</td>
+      <td>1.200000</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.920000</td>
+      <td>-87.700000</td>
+      <td>41.92000</td>
+      <td>-87.700000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7881AC6D39110C60</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 14:25:51</td>
+      <td>2021-05-30 14:41:04</td>
+      <td>0 days 00:15:13</td>
+      <td>15.216667</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.920000</td>
+      <td>-87.700000</td>
+      <td>41.94000</td>
+      <td>-87.690000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>853FA701B4582BAF</td>
+      <td>electric_bike</td>
+      <td>2021-05-30 18:15:39</td>
+      <td>2021-05-30 18:22:32</td>
+      <td>0 days 00:06:53</td>
+      <td>6.883333</td>
+      <td>7</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.940000</td>
+      <td>-87.690000</td>
+      <td>41.94000</td>
+      <td>-87.700000</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>531628</th>
+      <td>EF56D7D1D612AC11</td>
+      <td>electric_bike</td>
+      <td>2021-05-20 16:32:14</td>
+      <td>2021-05-20 16:35:39</td>
+      <td>0 days 00:03:25</td>
+      <td>3.416667</td>
+      <td>4</td>
+      <td>5</td>
+      <td>Blackstone Ave &amp; Hyde Park Blvd</td>
+      <td>13398</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.802581</td>
+      <td>-87.590230</td>
+      <td>41.80000</td>
+      <td>-87.600000</td>
+      <td>member</td>
+    </tr>
+    <tr>
+      <th>531629</th>
+      <td>745191CB9F21DE3C</td>
+      <td>classic_bike</td>
+      <td>2021-05-29 16:40:37</td>
+      <td>2021-05-29 17:22:37</td>
+      <td>0 days 00:42:00</td>
+      <td>42.000000</td>
+      <td>6</td>
+      <td>5</td>
+      <td>Sheridan Rd &amp; Montrose Ave</td>
+      <td>TA1307000107</td>
+      <td>Michigan Ave &amp; Oak St</td>
+      <td>13042</td>
+      <td>41.961670</td>
+      <td>-87.654640</td>
+      <td>41.90096</td>
+      <td>-87.623777</td>
+      <td>casual</td>
+    </tr>
+    <tr>
+      <th>531630</th>
+      <td>428575BAA5356BFF</td>
+      <td>electric_bike</td>
+      <td>2021-05-31 14:24:54</td>
+      <td>2021-05-31 14:31:38</td>
+      <td>0 days 00:06:44</td>
+      <td>6.733333</td>
+      <td>1</td>
+      <td>5</td>
+      <td>Sheridan Rd &amp; Montrose Ave</td>
+      <td>TA1307000107</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.961525</td>
+      <td>-87.654651</td>
+      <td>41.95000</td>
+      <td>-87.650000</td>
+      <td>member</td>
+    </tr>
+    <tr>
+      <th>531631</th>
+      <td>FC8A4A7AB7249662</td>
+      <td>electric_bike</td>
+      <td>2021-05-25 16:01:33</td>
+      <td>2021-05-25 16:07:37</td>
+      <td>0 days 00:06:04</td>
+      <td>6.066667</td>
+      <td>2</td>
+      <td>5</td>
+      <td>Sheridan Rd &amp; Montrose Ave</td>
+      <td>TA1307000107</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>41.961654</td>
+      <td>-87.654721</td>
+      <td>41.98000</td>
+      <td>-87.660000</td>
+      <td>member</td>
+    </tr>
+    <tr>
+      <th>531632</th>
+      <td>E873B8AA3EE84678</td>
+      <td>docked_bike</td>
+      <td>2021-05-12 12:22:14</td>
+      <td>2021-05-12 12:30:27</td>
+      <td>0 days 00:08:13</td>
+      <td>8.216667</td>
+      <td>3</td>
+      <td>5</td>
+      <td>Sheridan Rd &amp; Montrose Ave</td>
+      <td>TA1307000107</td>
+      <td>Clark St &amp; Grace St</td>
+      <td>TA1307000127</td>
+      <td>41.961670</td>
+      <td>-87.654640</td>
+      <td>41.95078</td>
+      <td>-87.659172</td>
+      <td>casual</td>
+    </tr>
+  </tbody>
+</table>
+<p>531633 rows × 17 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1a7d6405-ce5a-49c4-9c1a-d0345e7468f2')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-1a7d6405-ce5a-49c4-9c1a-d0345e7468f2 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-1a7d6405-ce5a-49c4-9c1a-d0345e7468f2');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-62ba9772-200e-49f2-90d1-dd0bd83617db">
+  <button class="colab-df-quickchart" onclick="quickchart('df-62ba9772-200e-49f2-90d1-dd0bd83617db')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-62ba9772-200e-49f2-90d1-dd0bd83617db button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>

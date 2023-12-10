@@ -57,5 +57,9 @@ def index3():
 def index4():
     return render_template('streamlit.html', head=col_names, rows=hd)
 
+@app.route('/con')
+def index6():
+    return render_template('conc.html', head=col_names, rows=hd)
+
 if __name__ == '__main__':
     app.run(debug=True)
