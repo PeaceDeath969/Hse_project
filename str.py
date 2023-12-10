@@ -11,7 +11,7 @@ df['lon'] = df.start_lng
 st.title("HSE Project")
 st.write("Dashboard for project")
 st.map(df)
-hd = df[:20].values.tolist()
-hd
+st.dataframe(df.head(10))
+
 
 
